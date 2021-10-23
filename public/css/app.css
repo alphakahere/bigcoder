@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Luckiest+Guy&display=swap);
 /*! tailwindcss v2.2.17 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -31878,6 +31879,23 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap'); */
+
+.logo {
+  font-family: "Lobster";
+}
+
+#header {
+  /* background: linear-gradient(90deg, rgba(254,200,154,1) 0%, rgba(230,204,178,1) 47%, rgba(221,161,94,1) 92%);; */
+  background: linear-gradient(90deg, rgba(5,113,171,1) 25%, rgba(2,62,138,0.8855917366946778) 46%, rgba(5,113,171,1) 87%);
+}
+
+.name{
+  font-family: 'Abril Fatface', 'Luckiest Guy' ;
 }
 
 @media (min-width: 640px) {
@@ -188019,3 +188037,4 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
