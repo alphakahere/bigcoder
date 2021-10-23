@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="https://kit.fontawesome.com/e4530581f4.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="flex items-center  bg-black justify-between px-56 py-3">
+<body class=" overflow-x-hidden">
+    <nav class="flex items-center  bg-black justify-between px-5 md:px-32 lg:px-48 xl:px-56 py-3">
         <h1 class="flex items-center text-2xl space-x-1 text-white">
             <i class="fas fa-bars"></i>
             <span class="logo text-3xl">BigCoder</span>
         </h1>
-        <div class="relative">
+        <div class="relative hidden md:block">
             <input type="text" name="search" id="search" 
                 class="px-2 placeholder-black outline-none text-black rounded-xl h-6"  
                 placeholder="Rechercher"
@@ -41,11 +41,30 @@
                 <p class="text-center">Diallo</p>
             </div>
         </div>
-       <div class="">           
-           <span>Développeur ReactJs && Laravel,</span>
-           <span>passionné par la programmation et du bussiness</span>
-       </div>
+       <p class="flex items-center text-center">           
+           Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
+       </p>
     </header>
-
+    <main class="pt-10 px-72">
+        <div class="flex space-x-6 border p-5">
+            <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="h-80 w-2/5 rounded">
+            <div class="flex flex-col">
+                <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
+                <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
+                <p class="text-lg">
+                    Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
+                    Par exemple, on va deployer une simple application  qui affichera le fameux 
+                    "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
+                </p>
+                <div class="flex items-center mt-16 space-x-1">
+                    <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
+                    <div class="flex flex-col justify-center">
+                        <h1 class="name">Alpha Amadou Diallo</h1>
+                        <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
