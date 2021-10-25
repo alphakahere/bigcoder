@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/e4530581f4.js" crossorigin="anonymous"></script>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="flex items-center  bg-black justify-between px-5 md:px-7 lg:px-48 xl:px-56 py-3">
+    <nav class="flex items-center fixed w-full bg-black justify-between px-5 md:px-7 lg:px-48 xl:px-56 py-3">
         <h1 class="flex items-center text-2xl space-x-1 text-white">
             <i class="fas fa-bars"></i>
             <span class="logo text-3xl">BigCoder</span>
@@ -48,200 +48,15 @@
            Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
        </p>
     </header>
+
     <main class="pt-10 px-10 md:px-20 lg:px-56 xl:px-72">
-        <article class="lg:flex space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-            <div class="lg:w-1/2">
-                <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-            </div>
-            <div class="flex flex-col p-0 lg:w-1/2">
-                <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                <p class="lg:text-lg">
-                    Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                    Par exemple, on va deployer une simple application  qui affichera le fameux 
-                    "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                </p>
-                <div class="flex items-center mt-6 lg:mt-9 space-x-1">
-                    <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                    <div class="flex flex-col justify-center">
-                        <h1 class="name">Alpha Amadou Diallo</h1>
-                        <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <div class=" grid lg:grid-cols-2 gap-4">
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=""> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class=" grid lg:grid-cols-3 gap-4">
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=""> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=""> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="flex flex-col space-x-5 p-3 mb-10 transition-colors duration-300 hover:bg-gray-100 border border-black border-opacity-0 hover:border-opacity-5 rounded-xl">
-                <div class="">
-                    <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="md:h-80 h-64 w-full rounded">
-                </div>
-                <div class="flex flex-col p-0">
-                    <h5 class=""> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-                    <h1 class="my-2 text-2xl font-semibold">Comment deployer une application laravel sur Heroku</h1>
-                    <p class="lg:text-lg">
-                        Dans ce tutoriel, je suppose que vous êtes assez familier avec Laravel, parce que je ne vais pas discuter des bases de Laravel . 
-                        Par exemple, on va deployer une simple application  qui affichera le fameux 
-                        "Hello World" mais vous pouvez le faire directement avec l'application que vous voulez deployer car c'est la même procédure. 
-                    </p>
-                    <div class="flex items-center mt-6 space-x-1">
-                        <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
-                        <div class="flex flex-col justify-center">
-                            <h1 class="name">Alpha Amadou Diallo</h1>
-                            <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
+        {{$slot}}
     </main>
+    <!-- Footer -->
+
+    <footer class="bg-black text-white text-center pt-4 pb-6">
+        <p>Copyright &copy; <span class="name">Alpha Amadou Diallo</span></p>
+        <p>2021 Tous droits resérvés</p>
+    </footer>
 </body>
 </html>
