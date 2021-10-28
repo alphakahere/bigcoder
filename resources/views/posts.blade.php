@@ -1,5 +1,5 @@
 <x-layout>
-    <x-post-latest-card />
+    <x-post-latest-card :post="$posts[0]"/>
     <div class=" grid lg:grid-cols-2 gap-4">
         <x-post-card />
         <x-post-card />
