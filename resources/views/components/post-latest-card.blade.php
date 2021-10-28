@@ -15,7 +15,7 @@
             <img src="{{asset('images/me.jpg')}}" alt="avatar-photo" class="h-10 w-10 rounded-full object-cover ">
             <div class="flex flex-col justify-center">
                 <h1 class="name">Alpha Amadou Diallo</h1>
-                <p class=" uppercase text-gray-500 font-medium text-sm">23 OCT 2021 - 4min read </p>
+                <p class=" uppercase text-gray-500 font-medium text-sm">{{date_format($post->created_at, 'd M Y')}} - {{$post->time}}MIN read </p>
             </div>
         </div>
     </div>
