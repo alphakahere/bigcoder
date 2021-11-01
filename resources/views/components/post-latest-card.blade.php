@@ -6,7 +6,9 @@
     <div class="flex flex-col p-0 justify-between lg:w-1/2">
         <div>
             <h5 class=" "> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
-            <h1 class="my-2 text-2xl font-semibold">{{ $post->title }}</h1>
+            <a href="/posts/{{$post->id}}">
+                <h1 class="my-2 text-2xl font-semibold">{{ $post->title }}</h1>
+            </a>
             <p class="lg:text-lg">
                 {{ $post->excerpt }} 
             </p>

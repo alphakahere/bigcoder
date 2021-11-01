@@ -24,7 +24,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->word(),
             'excerpt' => $this->faker->paragraph(),
-            'body' => $this->faker->paragraphs(5, true),
+            'body' => '<p>'.implode('<p></p>',$this->faker->paragraphs(10)).'</p>',
             'time' => 10,
         ];
     }

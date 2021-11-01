@@ -19,3 +19,7 @@ Route::get('/', function () {
         'posts' => Post::all(),
     ]);
 });
+
+Route::get('/posts/{id}', fn($id) => view('post', [
+    'post' => Post::find($id)
+]));
