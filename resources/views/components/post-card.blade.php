@@ -4,7 +4,11 @@
         <img src="{{asset('images/img.jpeg')}}" alt="img-post" class="lg:h-44 h-64 w-full rounded">
     </div>
     <div class="flex flex-col p-0">
-        <h5 class=""> <a href="#" class="text-blue-500 text-xl font-medium">Laravel</a></h5>
+        <h5 class=""> 
+            <a href="/categories/{{$post->category->id}}"" class="text-blue-500 text-xl font-medium">
+                {{$post->category->name}}
+            </a>
+        </h5>
         <h1 class="my-2 text-base font-semibold">{{$post->title}}</h1>
         <p class="lg:text-sm">
             {{$post->excerpt}} 

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -22,6 +23,8 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
+            'category_id'=> Category::factory(),
+            'slug' => $this->faker->word(),
             'title' => $this->faker->word(),
             'excerpt' => $this->faker->paragraph(),
             'body' => '<p>'.implode('<p></p>',$this->faker->paragraphs(10)).'</p>',
