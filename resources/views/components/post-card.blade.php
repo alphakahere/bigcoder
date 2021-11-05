@@ -5,11 +5,11 @@
     </div>
     <div class="flex flex-col p-0">
         <h5 class=""> 
-            <a href="/categories/{{$post->category->id}}"" class="text-blue-500 text-xl font-medium">
+            <a href="/categories/{{$post->category->slug}}"" class="text-blue-500 text-xl font-medium">
                 {{$post->category->name}}
             </a>
         </h5>
-        <h1 class="my-2 text-base font-semibold">{{$post->title}}</h1>
+        <a href="/posts/{{$post->slug}}"><h1 class="my-2 text-base font-semibold">{{$post->title}}</h1></a>
         <p class="lg:text-sm">
             {{$post->excerpt}} 
         </p>

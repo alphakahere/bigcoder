@@ -11,8 +11,10 @@
 <body class="overflow-x-hidden">
     <nav class="flex items-center fixed w-full bg-black justify-between px-5 md:px-7 lg:px-48 xl:px-56 py-3">
         <h1 class="flex items-center text-2xl space-x-1 text-white">
-            <i class="fas fa-bars"></i>
-            <span class="logo text-3xl">BigCoder</span>
+            <a href="/">
+                <i class="fas fa-bars"></i>
+                <span class="logo text-3xl">BigCoder</span>
+            </a>
         </h1>
         <div class="relative hidden md:block">
             <form class="" method="GET" action="#">
@@ -50,16 +52,29 @@
            Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
        </p>
     </header>
-    <div class="h-8 bg-gray-200 flex items-center justify-center">
+    <div class="h-8 bg-gray-200  items-center justify-center hidden md:flex ">
         <ul class="flex space-x-4 justify-center items-center">
             <li><a href="#" class="text-gray-600 hover:text-gray-700">JavaScript</a></li>
             <li><a href="#" class="text-gray-600 hover:text-gray-700">PHP</a></li>
             <li><a href="#" class="text-gray-600 hover:text-gray-700">ReactJS</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-gray-700">Laravel</a></li>
             <li><a href="#" class="text-gray-600 hover:text-gray-700">HTML</a></li>
             <li><a href="#" class="text-gray-600 hover:text-gray-700">CSS</a></li>
             <li><a href="#" class="text-gray-600 hover:text-gray-700">Astuces</a></li>
 
         </ul>
+    </div>
+    <div class="md:hidden flex space-x-4 items-center justify-center mt-3">
+        <div class="relative">
+            <form class="" method="GET" action="#" class="">
+                <input type="text" name="search" id="search" 
+                    class="px-3 py-1 placeholder-black outline-none text-black rounded-xl h-6 border border-gray-300 w-48    "  
+                    placeholder="Rechercher"
+                />
+            <i class="fas fa-search absolute top-1 right-2 text-black"></i>
+            </div>
+        </div>
+        
     </div>
     <main class="pt-10 px-10 md:px-20 lg:px-56 xl:px-72">
         {{$slot}}

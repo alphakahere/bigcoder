@@ -6,11 +6,11 @@
     <div class="flex flex-col p-0 justify-between lg:w-1/2">
         <div>
             <h5 class=" "> 
-                <a href="/categories/{{$post->category->id}}" class="text-blue-500 text-xl font-medium">
+                <a href="/categories/{{$post->category->slug}}" class="text-blue-500 text-xl font-medium">
                     {{$post->category->name}}
                 </a>
             </h5>
-            <a href="/posts/{{$post->id}}">
+            <a href="/posts/{{$post->slug}}">
                 <h1 class="my-2 text-2xl font-semibold">{{ $post->title }}</h1>
             </a>
             <p class="lg:text-lg">
