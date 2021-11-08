@@ -1,4 +1,7 @@
 <x-layout>
+    <x-slot name="categoryfilter">
+        <x-categoryBar :categories="$categories"/>
+    </x-slot>
     <div class="mb-2">
         <div class="">
             <h1 class="text-center text-2xl font-medium">{{$post->title}}</h1>

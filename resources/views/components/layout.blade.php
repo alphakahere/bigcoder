@@ -9,22 +9,16 @@
     <script src="https://kit.fontawesome.com/e4530581f4.js" crossorigin="anonymous"></script>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="flex items-center fixed w-full bg-black justify-between px-5 md:px-7 lg:px-48 xl:px-56 py-3">
+    <nav class="flex items-center fixed w-full bg-black justify-between px-5 md:px-7 lg:px-48 xl:px-56 py-3 z-50">
         <h1 class="flex items-center text-2xl space-x-1 text-white">
             <a href="/">
                 <i class="fas fa-bars"></i>
                 <span class="logo text-3xl">BigCoder</span>
             </a>
         </h1>
-        <div class="relative hidden md:block">
-            <form class="" method="GET" action="#">
-                <input type="text" name="search" id="search" 
-                    class="px-2 placeholder-black outline-none text-black rounded-xl h-6"  
-                    placeholder="Rechercher"
-                />
-            <i class="fas fa-search absolute top-1 right-2 text-black"></i>
-            </div>
-        </div>
+        @if (Route::is('home'))
+            {{$searchBar}}            
+        @endif
         <div class="text-white flex items-center space-x-3">
             <a href="https://twitter.com/alpho69" target="_blank" class="bg-white h-6 w-6 flex items-center justify-center rounded-full">
                 <i class="fab fa-twitter text-black"></i>
@@ -52,8 +46,10 @@
            Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
        </p>
     </header>
-    {{$categoryfilter}}
-    <div class="md:hidden flex space-x-4 items-center justify-center mt-3">
+    {{-- @if (Route::is('home')) --}}
+        {{$categoryfilter}}        
+    {{-- @endif --}}
+        <div class="md:hidden flex space-x-4 items-center justify-center mt-3 z-0">
         <div class="relative">
             <form class="" method="GET" action="#" class="">
                 <input type="text" name="search" id="search" 
@@ -61,6 +57,7 @@
                     placeholder="Rechercher"
                 />
             <i class="fas fa-search absolute top-1 right-2 text-black"></i>
+            </form>
             </div>
         </div>
         

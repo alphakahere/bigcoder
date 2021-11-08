@@ -1,16 +1,20 @@
 <x-layout>
-    <x-slot name="categoryfilter">
-        <div class="h-8 bg-gray-200  items-center justify-center hidden md:flex ">
-            <ul class="flex space-x-4 justify-center items-center">
-                @foreach ($categories as $category)
-                    <li>
-                        <a href="/categories/{{$category->slug}}" class="text-gray-600 hover:text-gray-700">{{$category->name}}</a>
-                    </li>
-                @endforeach
-            </ul>
+    <x-slot name="searchBar">
+        <div class="relative hidden md:block">
+            <form method="GET" action="#">
+                <input type="text" name="search" id="search" 
+                    class="px-2 placeholder-black outline-none text-black rounded-xl h-6"  
+                    placeholder="Rechercher"
+                />
+                <i class="fas fa-search absolute top-1 right-2 text-black"></i>
+            </form>
+            </div>
         </div>
     </x-slot>
-
+    <x-slot name="categoryfilter">
+        <x-categoryBar :categories="$categories"/>
+    </x-slot>
+    
     @if(count($posts))
         <x-post-latest-card :post="$posts[0]"/>
         <div class=" grid lg:grid-cols-3 gap-4">
