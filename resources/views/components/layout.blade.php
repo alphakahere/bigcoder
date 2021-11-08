@@ -46,9 +46,7 @@
            Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
        </p>
     </header>
-    {{-- @if (Route::is('home')) --}}
         {{$categoryfilter}}        
-    {{-- @endif --}}
         <div class="md:hidden flex space-x-4 items-center justify-center mt-3 z-0">
         <div class="relative">
             <form class="" method="GET" action="#" class="">
