@@ -52,18 +52,7 @@
            Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
        </p>
     </header>
-    <div class="h-8 bg-gray-200  items-center justify-center hidden md:flex ">
-        <ul class="flex space-x-4 justify-center items-center">
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">JavaScript</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">PHP</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">ReactJS</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">Laravel</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">HTML</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">CSS</a></li>
-            <li><a href="#" class="text-gray-600 hover:text-gray-700">Astuces</a></li>
-
-        </ul>
-    </div>
+    {{$categoryfilter}}
     <div class="md:hidden flex space-x-4 items-center justify-center mt-3">
         <div class="relative">
             <form class="" method="GET" action="#" class="">
