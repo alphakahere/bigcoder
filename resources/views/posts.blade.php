@@ -11,6 +11,20 @@
             </div>
         </div>
     </x-slot>
+    <x-slot name="header">
+        <header class="header  h-96 text-white flex flex-col justify-center items-center" id="header">
+            <div class="flex items-center mb-5 space-x-1">
+                <img src="{{asset('images/me.jpg')}}" alt="Ma-Photo" class="h-20 w-20 rounded-full object-cover">
+                <div class="name text-2xl" >
+                    <p>Alpha Amadou</p>
+                    <p class="text-center">Diallo</p>
+                </div>
+            </div>
+           <p class="flex items-center text-center">           
+               Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
+           </p>
+        </header>
+    </x-slot>
     <x-slot name="categoryfilter">
         <x-categoryBar :categories="$categories"/>
     </x-slot>
