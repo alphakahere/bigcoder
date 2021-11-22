@@ -9,9 +9,9 @@
     <script src="https://kit.fontawesome.com/e4530581f4.js" crossorigin="anonymous"></script>
 </head>
 <body class="overflow-x-hidden">
-    <div class="h-screen flex flex-col justify-between">
-        <div class="">
-            @include('navbar')
+    @include('navbar')
+    <div class="h-screen flex flex-col justify-between w-full">
+        <div class="w-full">
             {{$header ?? ''}}    
             {{$categoryfilter ?? ''}}        
             <div class="md:hidden flex space-x-4 items-center justify-center mt-3 z-0">
