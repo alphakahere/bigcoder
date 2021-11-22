@@ -22,7 +22,7 @@ class SessionController extends Controller
 
         if (Auth::attempt($attributes)){
             session()->regenerate();
-            return redirect('/')->with("Bienvenue !"); 
+            return redirect('/')->with('success',"Bienvenue !"); 
 
         }
 
@@ -30,6 +30,12 @@ class SessionController extends Controller
         return back()->withErrors([
             'email' => 'vos informations sont incorrectes'
         ]);
+    }
+
+    public function destroy() {
+        Auth::logout();
+
+        return redirect('/')->with('success', 'Aurevoir');
     }
 
    

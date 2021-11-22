@@ -29,8 +29,16 @@
                 <i class="fab fa-github text-black"></i>
             </a>
         </li>
-        <li class=" list-none">
-            <a href="/login" class=" text-white" class="">Se Connecter</a>
-        </li>
+        @auth
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" class=" text-white" >Se Deconnecter</button>
+            </form>
+        @else
+            <li class=" list-none">
+                <a href="/login" class=" text-white" class="">Se Connecter</a>
+            </li>
+        @endauth
+        
     </div>
 </nav>
