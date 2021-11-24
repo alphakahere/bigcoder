@@ -23,6 +23,7 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
+            'user_id' => 1,
             'category_id'=> Category::factory(),
             'slug' => $this->faker->word(),
             'title' => $this->faker->word(),
