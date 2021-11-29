@@ -43,6 +43,6 @@ Route::post('/login', [SessionController::class, 'store']);
 
 Route::post('logout', [SessionController::class, 'destroy']);
 
-Route::post('/comment', [CommentController::class, 'store']);
+Route::post('/posts/{post:slug}/comment', [CommentController::class, 'store']);
 
 

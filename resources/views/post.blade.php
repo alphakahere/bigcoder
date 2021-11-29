@@ -14,7 +14,7 @@
     {{-- comment form --}}
     <div class="w-full my-5 border-t border-gray-400 pt-5">
        @auth
-           <x-comment-form />
+           <x-comment-form :post="$post" />
         @else 
             Il faut te connecter pour participer à la discussion.
             <a href="/login" class=" text-blue-500">Se Connecter</a>
