@@ -41,7 +41,7 @@
                     </button>
                     <p class="mt-3">
                         <span>Avez-vous un compte?</span>
-                        <a href="/login" class=" text-blue-500">connectez-vous</a>
+                        <a href="/login" class=" text-blue-500 hover:underline">Se Connecter</a>
                     </p>
                 </div>
             </form>

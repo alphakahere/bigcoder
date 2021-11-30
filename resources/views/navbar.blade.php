@@ -32,11 +32,11 @@
         @auth
             <form action="/logout" method="POST">
                 @csrf
-                <button type="submit" class=" text-white" >Se Deconnecter</button>
+                <button type="submit" class=" text-white hover:underline" >Se Deconnecter</button>
             </form>
         @else
             <li class=" list-none">
-                <a href="/login" class=" text-white" class="">Se Connecter</a>
+                <a href="/login" class=" text-white hover:underline" class="">Se Connecter</a>
             </li>
         @endauth
         

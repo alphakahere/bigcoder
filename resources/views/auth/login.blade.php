@@ -27,7 +27,7 @@
                     </button>
                     <p class="mt-3">
                         <span>Vous n'avez pas de compte?</span>
-                        <a href="/register" class=" text-blue-500">inscrivez-vous</a>
+                        <a href="/register" class=" text-blue-500 hover:underline">S'inscrire</a>
                     </p>
                 </div>
             </form>

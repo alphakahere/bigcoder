@@ -8,22 +8,23 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $posts = Post::latest();
 
         if (request('search')) {
             $posts
             ->where('title', 'like', '%'.request('search').'%')
-            ->orWhere('body', 'like', '%'.request('search').'%' );
-        } 
-        
+            ->orWhere('body', 'like', '%'.request('search').'%');
+        }
         return view('posts', [
             'posts' => $posts->get(),
             'categories' => Category::all(),
         ]);
     }
 
-    public function show(Post $post) {
+    public function show(Post $post)
+    {
         return view('post', [
             'post' => $post,
             'categories' => Category::all(),
