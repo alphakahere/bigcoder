@@ -21,7 +21,7 @@
                 </div>
             </div>
            <p class="flex items-center text-center">           
-               Développeur ReactJs && Laravel, <br>passionné par la programmation et du bussiness
+               Développeur ReactJs && Laravel, <br>passionné par la programmation, des nouvelles technologies et du bussiness
            </p>
         </header>
     </x-slot>
